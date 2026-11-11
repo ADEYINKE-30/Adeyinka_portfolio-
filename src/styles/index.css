@@ -635,6 +635,61 @@ h2 {
 .about-body p {
   margin-bottom: 24px;
 }
+.education-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  border-bottom: 1px solid var(--color-border);
+}
+.education-list {
+  display: grid;
+  gap: 20px;
+}
+.education-card {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 35px;
+  padding: 30px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+.education-year {
+  margin: 3px 0 0;
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.education-school {
+  margin-bottom: 8px;
+  color: var(--color-ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.education-card h3 {
+  max-width: 700px;
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+.education-card > div > p:not(.education-school) {
+  max-width: 700px;
+  margin-bottom: 20px;
+  color: var(--color-muted);
+  line-height: 1.75;
+}
+.education-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.education-tags span {
+  padding: 7px 10px;
+  background: var(--color-soft-accent);
+  color: var(--color-ink);
+  font-size: 0.72rem;
+}
 .skills-section {
   padding-top: 90px;
 }
@@ -972,6 +1027,14 @@ h2 {
     grid-template-columns: 1fr;
     gap: 40px;
     padding-bottom: 70px;
+  }
+  .education-section {
+    padding: 70px 0;
+  }
+  .education-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px;
   }
   .skills-section {
     padding-top: 65px;

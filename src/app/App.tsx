@@ -312,6 +312,59 @@ function AboutPage() {
             </div>
           </div>
         </div>
+        <section className="education-section" aria-labelledby="education-title">
+          <SectionHeading eyebrow="Education" title="The experiences behind the work." />
+          <div className="education-list">
+            <article className="education-card">
+              <p className="education-year">2026</p>
+              <div>
+                <p className="education-school">GOMYCODE</p>
+                <h3>Software Development Bootcamp with AI Skills</h3>
+                <p>
+                  Hands-on training in building full-stack web applications, from
+                  responsive interfaces to the APIs and databases behind them, including
+                  AI-assisted development.
+                </p>
+                <div className="education-tags">
+                  {[
+                    "HTML/CSS",
+                    "JavaScript",
+                    "React",
+                    "TypeScript",
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB",
+                    "REST APIs",
+                    "Git/GitHub",
+                  ].map((item) => (
+                    <span key={item}>{item}</span>
+                  ))}
+                </div>
+              </div>
+            </article>
+            <article className="education-card">
+              <p className="education-year">2018 – 2020</p>
+              <div>
+                <p className="education-school">
+                  Federal College of Education (Special), Oyo, Nigeria
+                </p>
+                <h3>
+                  Diploma of Education: Communication and Behaviour Disorders / English
+                </h3>
+                <p>
+                  Trained to teach children with communication difficulties. It taught me
+                  to explain things in more than one way and to stay patient until they
+                  land, which I now bring to how I design and build software.
+                </p>
+                <div className="education-tags">
+                  {["Empathy", "Problem solving", "Patience", "Tolerance"].map((item) => (
+                    <span key={item}>{item}</span>
+                  ))}
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
         <div className="skills-section">
           <SectionHeading
             eyebrow="My toolkit"

@@ -78,6 +78,17 @@ describe("App", () => {
     expect(screen.getByText("classroom teacher")).toBeVisible();
     expect(screen.getByText("private tutor")).toBeVisible();
     expect(screen.getByText("full-stack developer")).toBeVisible();
+    expect(screen.getByText("Education")).toBeVisible();
+    expect(
+      screen.getByRole("heading", {
+        name: "Software Development Bootcamp with AI Skills",
+      }),
+    ).toBeVisible();
+    expect(
+      screen.getByRole("heading", {
+        name: "Diploma of Education: Communication and Behaviour Disorders / English",
+      }),
+    ).toBeVisible();
   });
 
   it("renders project preview images", () => {
